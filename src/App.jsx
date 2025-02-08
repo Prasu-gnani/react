@@ -70,7 +70,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import AboutUs from "./AboutUs";
 import Orders from "./Orders";
-import Cart from "./cart";
+import Cart from "./Cart";
 import Veg from "./Veg";
 import Nonveg from "./Nonveg";
 import Home from "./Home";
@@ -79,7 +79,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import Milk from "./Milk";
 import { logout } from "./store";
-import Login from "./login";
+import Login from "./Login";
 import NotFound from "./NotFound";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
