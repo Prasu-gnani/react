@@ -9,6 +9,14 @@ const productslice = createSlice({
         {image:"paneer.jpg",name:'Paneer',price:150.8},
         {image:"greenchilli.jpg",name:'Greenchilli',price:50.8},
         {image:"onion.jpg",name:'Onion',price:100.8},
+        {image:"cabbage.jpg",name:'Cabbage',price:70.8},
+        {image:"cauliflour.jpg",name:'Caulifour',price:100.8},
+        {image:"greenbeans.jpg",name:'Greenbeans',price:50.8},
+        {image:"drumstick.jpg",name:'Drumstick',price:100.8},
+        {image:"lady'sfinger.jpg",name:'Ladysfinger',price:100.8},
+        {image:"onion.jpg",name:'Onion',price:100.8},
+        {image:"onion.jpg",name:'Onion',price:100.8},
+        {image:"onion.jpg",name:'Onion',price:100.8},
 
 
     ],

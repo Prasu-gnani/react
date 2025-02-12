@@ -111,6 +111,9 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
             <li className="nav-item">
+            <Link to="/" className="nav-link"> </Link>
+            </li>
+            <li className="nav-item">
             <Link to="/home" className="nav-link"> 🏠Home</Link>
             </li>
               <li className="nav-item">
@@ -161,6 +164,7 @@ function App() {
       {/* 🌟 Beautiful Container for Routes */}
       <div className="container py-4">
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/veg" element={<Veg />} />
           <Route path="/nonveg" element={<Nonveg />} />

@@ -105,7 +105,9 @@ import { clearcart, completepurchase, decrement, increment, remove } from "./sto
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 
+
 function Cart() {
+    
     let dispatch = useDispatch();
     let cartitems = useSelector(state => state.cart);
 
