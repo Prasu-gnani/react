@@ -98,7 +98,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-gradient shadow fixed-top">
         <div className="container">
           <Link to="/mystore" className="navbar-brand fw-bold fs-4">
-            🛍️ My Store
+          🍃 Fresh Harvest
           </Link>
           <button
             className="navbar-toggler"

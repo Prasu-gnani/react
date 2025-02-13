@@ -24,8 +24,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { Addtocart } from "./store";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
 
 function Milk() {
+    let navigate=useNavigate();
     const milkitems = useSelector((state) => state.products.milk);
     const dispatch = useDispatch();
     const [searchTerm, setSearchTerm] = useState("");
@@ -107,6 +109,14 @@ function Milk() {
                         disabled={currentPage === totalPages}
                     >
                         Next ➡
+                    </button>
+                </div>
+                {/* Display Add to Cart Button Separately */}
+                <div className="text-center mt-4">
+                    <button 
+                        className="btn btn-primary px-5 py-3 fw-bold shadow" onClick={()=>navigate("/cart")}>
+                    
+                        🛒 View Cart
                     </button>
                 </div>
             </div>
