@@ -1,7 +1,7 @@
 .navbar{
-    background-color: palevioletred;
+    background-color: rgb(234, 165, 86);
     padding: 10px;
-    height: 50px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,4 +34,12 @@
 }
 .logout-btn.hover{
     background-color: darkred;
+}
+
+.nav-link{
+    font-size: large;
+    color: rgb(247, 245, 244);
+}
+.icon-style{
+    font-size: 1.5rem;
 }

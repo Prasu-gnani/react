@@ -100,14 +100,14 @@
 // export default Cart;
 
 
+// 
+
 import { useDispatch, useSelector } from "react-redux";
 import { clearcart, completepurchase, decrement, increment, remove } from "./store";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 
-
 function Cart() {
-    
     let dispatch = useDispatch();
     let cartitems = useSelector(state => state.cart);
 
@@ -141,6 +141,7 @@ function Cart() {
 
     let finalitems = cartitems.map((item, index) => (
         <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
+            <img src={item.image} alt={item.name} style={{ width: '100px', height: '100px', objectFit: 'cover', borderRadius: '5px' }} />
             <span className="fw-bold">{item.name}</span>
             <span className="text-muted">₹{item.price}</span>
             <span>Quantity: {item.quantity}</span>
@@ -191,7 +192,7 @@ function Cart() {
                     <button className="btn btn-success w-100 mt-3" onClick={() => handlepurchase()}>Complete Purchase</button>
                 </div>
             ) : (
-                <p className="text-center text-danger fw-bold mt-5">Your cart is empty!</p>
+                <p className="text-center text-danger fw-bold mt-5">Your cart is empty<br /><img src="cart.jpg" height="500px" width="500px" alt="Empty Cart" /></p>
             )}
         </div>
     );

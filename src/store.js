@@ -50,6 +50,8 @@ milk:[
       { image:"dodla.jpg",name: "Dodla", price: 35 },
       { image:"amul.jpg",name: "Amul", price: 33 },
       { image:"vijayamilk.jpg",name: "Vijayamilk", price: 35 },
+      { image:"hatson.jpg",name: "Hatson", price: 30 },
+
 
 
 

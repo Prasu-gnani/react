@@ -67,6 +67,8 @@
 //   )
 // }
 // export default App;
+// 
+
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import AboutUs from "./AboutUs";
 import Orders from "./Orders";
@@ -95,10 +97,10 @@ function App() {
   return (
     <BrowserRouter>
       {/* 🌟 Beautiful Gradient Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-gradient shadow fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top padding-5">
         <div className="container">
-          <Link to="/mystore" className="navbar-brand fw-bold fs-4">
-          🍃 Fresh Harvest
+          <Link to="/fresh harvest" className="navbar-brand fw-bold fs-4">
+            🍃 Fresh Harvest
           </Link>
           <button
             className="navbar-toggler"
@@ -110,24 +112,24 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-            <Link to="/" className="nav-link"> </Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/home" className="nav-link"> 🏠Home</Link>
-            </li>
               <li className="nav-item">
-                <Link to="/veg" className="nav-link">🥦 Veg</Link>
+                <Link to="/" className="nav-link"> </Link>
               </li>
               <li className="nav-item">
-                <Link to="/nonveg" className="nav-link">🍗 Nonveg</Link>
+                <Link to="/home" className="nav-link"> <span className="icon-style">🏠 </span>Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/milk" className="nav-link">🥛 Milk</Link>
+                <Link to="/veg" className="nav-link"><span className="icon-style">🥦 </span>Veg</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/nonveg" className="nav-link"><span className="icon-style">🍗 </span>Nonveg</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/milk" className="nav-link"><span className="icon-style">🥛 </span>Milk</Link>
               </li>
               <li className="nav-item">
                 <Link to="/cart" className="nav-link position-relative">
-                  🛒 Cart
+                <span className="icon-style">🛒 </span>Cart
                   {totalitems > 0 && (
                     <span className="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
                       {totalitems}
@@ -136,13 +138,13 @@ function App() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/orders" className="nav-link">📦 Orders</Link>
+                <Link to="/orders" className="nav-link"><span className="icon-style">📦 </span>Orders</Link>
               </li>
               <li className="nav-item">
-                <Link to="/aboutus" className="nav-link">ℹ️ About Us</Link>
+                <Link to="/aboutus" className="nav-link"><span className="icon-style">ℹ️</span> About Us</Link>
               </li>
               <li className="nav-item">
-                <Link to="/contactus" className="nav-link">📞 Contact Us</Link>
+                <Link to="/contactus" className="nav-link"><span className="icon-style">📞 </span>Contact Us</Link>
               </li>
             </ul>
             <div className="d-flex align-items-center">
