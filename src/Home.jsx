@@ -18,7 +18,7 @@ function Home() {
         <div className="container text-center mt-5">
             {/* Hero Section */}
             <div className="card shadow-lg p-5 bg-light rounded">
-                <h1 className="text-primary fw-bold display-4">🍃 Welcome to Fresh Harvest </h1>
+                <h1 className="text-primary fw-bold display-4"> <img src ="nature.jpg" height="50px" width="50px"></img> Welcome to Nature's basket </h1>
                 <p className="lead text-secondary">
                     Discover the best products at unbeatable prices. Your one-stop shop for quality and convenience.
                 </p>

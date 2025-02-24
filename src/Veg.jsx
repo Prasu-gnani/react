@@ -1,25 +1,3 @@
-// import { useDispatch, useSelector } from "react-redux";
-// import { Addtocart } from "./store";
-
-// function Veg()
-// {
-//     let vegitems = useSelector(state => state.products.veg)
-//     let dispatch=useDispatch();
-//     let finalitems=vegitems.map((item,index)=>(
-//         <li key={index}>
-//             {item.name}-{item.price}
-//             &emsp;<button style={{color:"blue",backgroundColor:"green"}}onClick={()=> dispatch(Addtocart(item))}>Add to cart</button>
-//         </li>
-//     ))
-//     return (
-//         <>
-//         <h1  style={{color:"green"}}>This is a web page</h1>
-//         <h1  style={{color:"green"}}>This page contains all vegetable items</h1>
-//         <ol>{finalitems}</ol>
-//         </>
-//     )
-// }
-// export default Veg;
 
 import { useDispatch, useSelector } from "react-redux";
 import { Addtocart } from "./store";

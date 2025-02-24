@@ -100,7 +100,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top padding-5">
         <div className="container">
           <Link to="/fresh harvest" className="navbar-brand fw-bold fs-4">
-            🍃 Fresh Harvest
+            <img src ="nature.jpg" height="50px" width="50px"></img> Nature's basket
           </Link>
           <button
             className="navbar-toggler"
